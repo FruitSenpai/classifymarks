@@ -3,7 +3,6 @@
 
 import sys
 
-
 def getData(f):
     results = []
     for line in f:
@@ -31,7 +30,8 @@ def showRanges(data):
         lower=upper
 
 
-fname = open(sys.argv[:2]) #argv[1]
+fname = open(sys.argv[0]) #argv[1]
+print fname
 boundaries = list(map(int, sys.argv[2:]))
 data = getData(fname)
 showRanges(data)
